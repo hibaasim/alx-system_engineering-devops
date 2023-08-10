@@ -1,2 +1,2 @@
 #!/bin/bash
-tr -d w,W
+tr -d c,C
