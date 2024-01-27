@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This scrpit prints the PID fo the running program
+
+pidof -s bash
