@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # This script lists all the running processes
 
-ps -auxf | less | grep USER
+ps -auxf
