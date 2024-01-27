@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# This script does everything in task 9
+
+del (){
+	rm /var/run/myscript.pid
+	exit
+}
+
+echo "$$" > /var/run/myscript.pid
+i=1
+while ((i > 0))
+do
+echo "To infinity and beyond"
+trap 'echo "Y U no love me?!"' SIGINT
+trap 'echo "I hate the kill command" && del' SIGTERM
+trap 'del' SIGQUIT
+((i++))
+done
