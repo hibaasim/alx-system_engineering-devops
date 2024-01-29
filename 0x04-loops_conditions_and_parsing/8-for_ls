@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This script displays the content of a directory in  list format
+
+for c in *
+do
+	echo $c | cut -f 2 -d '-'
+done
