@@ -3,5 +3,5 @@
 
 for c in *
 do
-	echo $c | cut -f 2 -d '-'
+	echo "$c" | cut -f 2 -d '-'
 done
