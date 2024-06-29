@@ -1,7 +1,7 @@
 # Manifest to create a file in /tmp
 
 file { '/tmp/school':
-  ensure  => present,
+  ensure  => file,
   path    => '/tmp/school',
   mode    => '0774',
   owner   => 'www-data',
