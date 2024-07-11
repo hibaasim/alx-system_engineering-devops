@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-# Script to install Nginx
+# Script to redirect pages to 301
 
 apt-get -y update
-apt-get -y upgrade
 apt-get -y install nginx
 service nginx start
 sudo chown -R "$USER":"$USER" /var/www
