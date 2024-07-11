@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# Script to redirect pages to 301
+# Script to create a custom 404 page
 
 apt-get -y update
 apt-get -y install nginx
 service nginx start
-chown -R "$USER":"$USER" /var/www
+sudo chown -R "$USER":"$USER" /var/www
 echo "Hello World!" > /var/www/html/index.nginx-debian.html
 sed -i "/server_name _;/ a\\\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;"  /etc/nginx/sites-available/defaultservice nginx restart
