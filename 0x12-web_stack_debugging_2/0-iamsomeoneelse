@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 # script to show the user
 
-sudo -u "$1" 
-whoami
+sudo -u "$1" whoami 
